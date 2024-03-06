@@ -35,5 +35,5 @@ $client.DownloadFile('https://download.visualstudio.microsoft.com/download/pr/9a
 $client.DownloadFile('https://raw.githubusercontent.com/alan-lisboa/dev-setup/main/scripts/vs2022_enterprise/vs2022enterprise.vsconfig', "${temp}\vs2022enterprise.vsconfig");
 
 Set-Location $temp
-.\vs_Enterprise.exe --config "${temp}\vs2022enterprise.vsconfig" -p
+.\vs_Enterprise.exe --config "${temp}\vs2022enterprise.vsconfig"
 Set-Location $location
