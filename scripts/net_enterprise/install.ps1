@@ -15,7 +15,7 @@ Invoke-Expression 'choco install sql-server-2022 -y'
 Invoke-Expression 'choco install sql-server-management-studio -y'
 
 # Azure Data Studio
-Invoke-Expression 'choco install azure-data-studio'
+Invoke-Expression 'choco install azure-data-studio -y'
 
 # Notepad++
 Invoke-Expression 'choco install notepadplusplus -y'
@@ -30,7 +30,7 @@ Invoke-Expression 'choco install git -y'
 Invoke-Expression 'choco install nodejs-lts -y'
 
 # Windows Terminal
-Invoke-Expression 'choco install microsoft-windows-terminal'
+Invoke-Expression 'choco install microsoft-windows-terminal -y'
 
 # # Visual Studio 2022
 $location = Get-Location
