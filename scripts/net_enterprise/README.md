@@ -28,7 +28,7 @@ powershell
 
 3. Now paste the following command:
 ```powershell
-Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/alan-lisboa/dev-setup/main/scripts/vs2022_enterprise/install.ps1'))
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/alan-lisboa/dev-setup/main/scripts/net_enterprise/install.ps1'))
 ```
 
 4. And press `ENTER` to run, wait a few minutes.
