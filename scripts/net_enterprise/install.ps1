@@ -9,10 +9,13 @@ Invoke-Expression ($client.DownloadString('https://community.chocolatey.org/inst
 Invoke-Expression 'choco install netfx-4.8-devpack -y'
 
 # SQL Server
-Invoke-Expression 'choco install sql-server-express -y'
+Invoke-Expression 'choco install sql-server-2022 -y'
 
 # SSMS
 Invoke-Expression 'choco install sql-server-management-studio -y'
+
+# Azure Data Studio
+Invoke-Expression 'choco install azure-data-studio'
 
 # Notepad++
 Invoke-Expression 'choco install notepadplusplus -y'
@@ -25,6 +28,9 @@ Invoke-Expression 'choco install git -y'
 
 # NodeJS
 Invoke-Expression 'choco install nodejs-lts -y'
+
+# Windows Terminal
+Invoke-Expression 'choco install microsoft-windows-terminal'
 
 # # Visual Studio 2022
 $location = Get-Location
