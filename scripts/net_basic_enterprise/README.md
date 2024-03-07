@@ -1,9 +1,12 @@
 # .NET Stack (Visual Studio 2022 Enterprise)
-This script was created to attend the .net stack development for web and desktop applications. It will install the following softwares:
+This script was created to attend the .net stack development for web and desktop applications. 
+
+It will install the following softwares:
 
 - Chocolatey
 - .NET Framework 4.8 (DevPack)
-- SQL Server 2022 (Developer)
+- .NET Framework 8
+- SQL Server 2022 (Developer Edition)
 - SQL Server Management Studio
 - Azure Data Studio
 - Notepad++
@@ -11,7 +14,7 @@ This script was created to attend the .net stack development for web and desktop
 - Git
 - Node JS (LTS)
 - Windows Terminal
-- Visual Studio 2022 Enterprise
+- Visual Studio 2022 Enterprise (Web + Desktop)
 
 ## How to Install
 
@@ -28,7 +31,7 @@ powershell
 
 3. Now paste the following command:
 ```powershell
-Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/alan-lisboa/dev-setup/main/scripts/vs2022_enterprise/install.ps1'))
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/alan-lisboa/dev-setup/main/scripts/net_basic_enterprise/install.ps1'))
 ```
 
 4. And press `ENTER` to run, wait a few minutes.
