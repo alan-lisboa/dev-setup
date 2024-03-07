@@ -60,7 +60,6 @@ New-Item -Type Directory -Path $temp | Out-Null
 $client.DownloadFile('https://download.visualstudio.microsoft.com/download/pr/9a62f360-5491-46e0-b370-3b90f2545317/a129931752b3d0b3e022ffe0a9191f4b554565613ec1ba6be258b0c3a46d9dc9/vs_Enterprise.exe', "${temp}\vs_Enterprise.exe");
 $client.DownloadFile('https://raw.githubusercontent.com/alan-lisboa/dev-setup/main/scripts/net_enterprise/vs2022.vsconfig', "${temp}\vs2022.vsconfig");
 
-S\vsLEnttrontse.exS\vsLEnttrontse.ex
-Set-Locatione$locati-ntione$localionti-ntion $location
+Set-Location $temp
 .\vs_Enterprise.exe --config "${temp}\vs2022.vsconfig"
 Set-Location $location
