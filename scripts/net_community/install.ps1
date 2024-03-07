@@ -2,6 +2,10 @@ Set-ExecutionPolicy Bypass -Scope Process -Force;
 [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; 
 $client = New-Object System.Net.WebClient;
 
+$location = Get-Location
+$temp = Join-Path $Env:Temp $(New-Guid)
+New-Item -Type Directory -Path $temp | Out-Null
+
 # Chocolatey
 Write-Host 'Chocolatey' -ForegroundColor 'Blue'
 Invoke-Expression ($client.DownloadString('https://community.chocolatey.org/install.ps1'));
@@ -52,11 +56,13 @@ Write-Host 'Windows Terminal' -ForegroundColor 'Blue'
 Invoke-Expression 'choco install microsoft-windows-terminal -y'
 Write-Host 
 
+# .NET 8
+Write-Host '.NET 8' -ForegroundColor 'Blue'
+Invoke-Expression 'choco install dotnet-8.0-sdk -y'
+Write-Host 
+
 # Visual Studio 2022
 Write-Host 'Visual Studio 2022' -ForegroundColor 'Blue'
-$location = Get-Location
-$temp = Join-Path $Env:Temp $(New-Guid)
-New-Item -Type Directory -Path $temp | Out-Null
 
 $client.DownloadFile('https://download.visualstudio.microsoft.com/download/pr/9a62f360-5491-46e0-b370-3b90f2545317/e6824ab935793b933305d82beebb78897f7abd936fb3fbcf0a9c0a8a9d2313b9/vs_Community.exe', "${temp}\vs_Community.exe");
 $client.DownloadFile('https://raw.githubusercontent.com/alan-lisboa/dev-setup/main/scripts/net_community/vs2022.vsconfig', "${temp}\vs2022.vsconfig");

@@ -52,6 +52,12 @@ Write-Host 'Windows Terminal' -ForegroundColor 'Blue'
 Invoke-Expression 'choco install microsoft-windows-terminal -y'
 Write-Host 
 
+# .NET 8
+Write-Host '.NET 8' -ForegroundColor 'Blue'
+Invoke-Expression 'choco install dotnet-8.0-sdk -y'
+Write-Host 
+
+# Visual Studio 2022
 Write-Host 'Visual Studio 2022' -ForegroundColor 'Blue'
 $location = Get-Location
 $temp = Join-Path $Env:Temp $(New-Guid)
