@@ -5,7 +5,7 @@ It will install the following softwares:
 
 - Chocolatey
 - .NET Framework 4.8 (DevPack)
-- .NET Framework 8
+- .NET 8
 - SQL Server 2022 (Developer Edition)
 - SQL Server Management Studio
 - Azure Data Studio
